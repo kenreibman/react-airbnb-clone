@@ -1,9 +1,8 @@
-import Events from './Events';
+import React from 'react';
 
 export default function Card(props) {
-  console.log(props);
   return (
-    <div className="c-card__item flex">
+    <li className="c-card__item flex">
       <div className="c-card__media-container relative">
         <img
           src={`../images/${props.img}`}
@@ -28,6 +27,6 @@ export default function Card(props) {
         <span className="c-card__cost">From ${props.price}</span>
         <span className="c-card__person"> / person</span>
       </div>
-    </div>
+    </li>
   );
 }
