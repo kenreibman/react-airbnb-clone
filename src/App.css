@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
+}
+.row {
+  max-width: 550px;
+  margin-inline: auto;
+}
+.hide {
+  position: absolute;
+  left: -9999px;
+  top: -99999px;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.main-header {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.main-header__inner {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.s-hero {
+}
+.s-hero__inner {
+  padding: 26px 37px;
+}
+.s-hero__container {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.s-hero__details {
+  margin-top: 32px;
+  flex-direction: column;
+}
+.s-hero__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  color: black;
+}
+.s-hero__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  margin-top: 1rem;
+  color: #222222;
 }
 
-.App-link {
-  color: #61dafb;
+.c-card__item {
+  flex-direction: column;
+  width: 175px;
+}
+.c-card__meta {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  margin-top: 9px;
+  gap: 2px;
+}
+.c-card__rating {
+}
+.c-card__rating-star {
+  color: #fe395c;
+}
+.c-card__rating-scale {
+  color: #222222;
+}
+.c-card__rating-count,
+.c-card__separator,
+.c-card__location {
+  color: #918e9b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.c-card__title {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
+}
+
+.c-card__total {
+  margin-top: 8px;
+}
+.c-card__cost {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+}
+.c-card__person {
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.s-events {
+}
+.s-events__inner {
+  padding-left: 37px;
+}
+
+.c-card__events {
+  gap: 18px;
+}
+.c-card__item {
+  flex: 1 1 auto;
+}
+.c-card__media-container {
+  border-radius: 9px;
+  overflow: hidden;
+}
+.c-card__media-container img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
 }
